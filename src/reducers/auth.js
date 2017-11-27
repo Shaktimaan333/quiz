@@ -10,3 +10,4 @@ export default (state = {}, action) => {
       return state;
   }
 };
+//  Only two actions have been defined. The other two actions, i.e., startlogin and startLogout will be dealt through default case, i.e., the state of the store will remain same.  

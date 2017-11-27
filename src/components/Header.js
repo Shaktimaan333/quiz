@@ -8,14 +8,14 @@ export const Header = ({ startLogout }) => (
     <div className="content-container">
       <div className="header__content">
         <Link className="header__title" to="/dashboard">
-          <h1>Boilerplate</h1>
+          <h1>BudsTrends</h1>
         </Link>
         <button className="button button--link" onClick={startLogout}>Logout</button>
       </div>
     </div>
   </header>
 );
-
+//  It returns a functions that dispatches the action startLogOut. Note that action startLogout is different from the variable/function startLogout. 
 const mapDispatchToProps = (dispatch) => ({
   startLogout: () => dispatch(startLogout())
 });
