@@ -7,7 +7,8 @@ export const login = (uid) => ({
 
 export const startLogin = () => {
   return () => {
-    return 3;// firebase.auth().signInWithPopup(googleAuthProvider);
+    console.log('inside action');
+    return firebase.auth().signInWithPopup(googleAuthProvider);
   };
 };
 
